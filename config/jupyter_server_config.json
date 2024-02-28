@@ -1,0 +1,13 @@
+{
+  "ServerApp": {
+    "allow_root": true,
+    "port": 8888,
+    "preferred_dir": "/notebooks"
+  },
+  "LabServerApp": {
+    "open_browser": false
+  },
+  "IdentityProvider": {
+    "hashed_password": "argon2:$argon2id$v=19$m=10240,t=10,p=8$3fWnbkEQSQ+u7XOdatRo2g$3OgpoQJQRxX6Cgmquw5h1T+DNpHRkeIvxeBBwj6uiq4"
+  }
+}
