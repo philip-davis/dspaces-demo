@@ -3,10 +3,10 @@ version: '3.8'
 services:
   dspaces:
     container_name: demo-dspaces
-    image: philipdavis/dspaces:dspaces-run-upd-2
+    image: philipdavis/dspaces-server:v29022024
     environment:
       - DSPACES_DEBUG=1
-      - OFI_STRING=sockets://eth0:4000
+      - OFI_STRING=tcp://eth0:4000
       - REPO_BRANCH=netcdf
     ports:
       - "4000:4000"
@@ -15,7 +15,7 @@ services:
 
   demo:
     container_name: demo
-    image: philipdavis/dspaces-demo
+    image: philipdavis/dspaces-demo:v29022024
     ports:
       - "8888:8888"
     networks:
