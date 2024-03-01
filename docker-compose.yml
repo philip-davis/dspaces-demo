@@ -15,7 +15,7 @@ services:
 
   demo:
     container_name: demo
-    image: philipdavis/dspaces-demo:v29022024
+    image: philipdavis/dspaces-demo:v01032024
     ports:
       - "8888:8888"
     networks:
